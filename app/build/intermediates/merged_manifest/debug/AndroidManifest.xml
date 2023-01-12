@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.plcoding.onlinetictactoe"
+    package="com.blankspace.onlinetictactoe"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="com.plcoding.onlinetictactoe.TicTacToeApp"
+        android:name="com.blankspace.onlinetictactoe.TicTacToeApp"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -21,10 +21,11 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.OnlineTicTacToe"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name="com.plcoding.onlinetictactoe.MainActivity"
+            android:name="com.blankspace.onlinetictactoe.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.OnlineTicTacToe" >
@@ -43,7 +44,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.plcoding.onlinetictactoe.androidx-startup"
+            android:authorities="com.blankspace.onlinetictactoe.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.profileinstaller.ProfileInstallerInitializer"

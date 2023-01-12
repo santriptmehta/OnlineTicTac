@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.plcoding.onlinetictactoe.app-mergeDebugResources-47:/values-af/values-af.xml",
+            "outputFile": "com.blankspace.onlinetictactoe.app-mergeDebugResources-47:/values-af/values-af.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\santr\\.gradle\\caches\\transforms-3\\b85151f625e46ef03b9d240f08170c85\\transformed\\core-1.7.0\\res\\values-af\\values-af.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "16",
-                        "startColumns": "4",
-                        "startOffsets": "1281",
-                        "endColumns": "100",
-                        "endOffsets": "1377"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\santr\\.gradle\\caches\\transforms-3\\5db86b9a389ea3422251895df3bd9d41\\transformed\\ui-1.2.0\\res\\values-af\\values-af.xml",
+                    "source": "/home/blankspace/.gradle/caches/transforms-3/5db86b9a389ea3422251895df3bd9d41/transformed/ui-1.2.0/res/values-af/values-af.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -35,6 +18,23 @@
                         "startOffsets": "105,201,288,385,486,572,648,746,836,922,986,1051,1129,1210,1382,1452",
                         "endColumns": "95,86,96,100,85,75,97,89,85,63,64,77,80,70,69,119",
                         "endOffsets": "196,283,380,481,567,643,741,831,917,981,1046,1124,1205,1276,1447,1567"
+                    }
+                },
+                {
+                    "source": "/home/blankspace/.gradle/caches/transforms-3/b85151f625e46ef03b9d240f08170c85/transformed/core-1.7.0/res/values-af/values-af.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "16",
+                        "startColumns": "4",
+                        "startOffsets": "1281",
+                        "endColumns": "100",
+                        "endOffsets": "1377"
                     }
                 }
             ]
