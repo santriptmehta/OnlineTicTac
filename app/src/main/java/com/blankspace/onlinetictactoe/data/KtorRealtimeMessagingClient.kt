@@ -33,7 +33,7 @@ class KtorRealtimeMessagingClient(
 
     override suspend fun sendAction(action: MakeTurn) {
         session?.outgoing?.send(
-            Frame.Text("make_turn${Json.encodeToString(action)}")
+            Frame.Text("make_turn#${Json.encodeToString(action)}")
         )
     }
 
