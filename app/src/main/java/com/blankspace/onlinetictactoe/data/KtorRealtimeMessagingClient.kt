@@ -8,26 +8,25 @@ import kotlinx.coroutines.flow.*
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
-import kotlinx.serialization.json.decodeFromStream
-import models.GameState
-import models.MakeTurn
 
 class KtorRealtimeMessagingClient(
-    private var client : HttpClient
+    private val client: HttpClient
 ): RealtimeMessagingClient {
-    private var session : WebSocketSession? = null
+
+    private var session: WebSocketSession? = null
+
     override fun getGameStateStream(): Flow<GameState> {
         return flow {
             session = client.webSocketSession {
-                url("ws://192.168.0.166/play")
+                url("ws://191.96.53.243/play")
             }
-            val gameState = session!!
+            val gameStates = session!!
                 .incoming
                 .consumeAsFlow()
                 .filterIsInstance<Frame.Text>()
                 .mapNotNull { Json.decodeFromString<GameState>(it.readText()) }
 
-            emitAll(gameState)
+            emitAll(gameStates)
         }
     }
 
@@ -41,6 +40,4 @@ class KtorRealtimeMessagingClient(
         session?.close()
         session = null
     }
-
-
 }

@@ -42,10 +42,10 @@ com.blankspace.onlinetictactoe.app-profileinstaller-1.2.0-40 /home/blankspace/.g
 com.blankspace.onlinetictactoe.app-navigation-common-ktx-2.4.0-41 /home/blankspace/.gradle/caches/transforms-3/eb821266d3131280d371fddffe7b47c7/transformed/navigation-common-ktx-2.4.0/res
 com.blankspace.onlinetictactoe.app-lifecycle-runtime-2.3.1-42 /home/blankspace/.gradle/caches/transforms-3/f0c35c3648b9c5a9b33467e6b3a94f1c/transformed/lifecycle-runtime-2.3.1/res
 com.blankspace.onlinetictactoe.app-ui-geometry-1.2.0-43 /home/blankspace/.gradle/caches/transforms-3/f3b1c651a3aba52e38c74d19d4f94257/transformed/ui-geometry-1.2.0/res
-com.blankspace.onlinetictactoe.app-resValues-44 /home/blankspace/AndroidStudioProjects/OnlineTicTac/app/build/generated/res/resValues/debug
-com.blankspace.onlinetictactoe.app-rs-45 /home/blankspace/AndroidStudioProjects/OnlineTicTac/app/build/generated/res/rs/debug
-com.blankspace.onlinetictactoe.app-packageDebugResources-46 /home/blankspace/AndroidStudioProjects/OnlineTicTac/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
-com.blankspace.onlinetictactoe.app-packageDebugResources-47 /home/blankspace/AndroidStudioProjects/OnlineTicTac/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
-com.blankspace.onlinetictactoe.app-merged_res-48 /home/blankspace/AndroidStudioProjects/OnlineTicTac/app/build/intermediates/merged_res/debug
-com.blankspace.onlinetictactoe.app-debug-49 /home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/debug/res
-com.blankspace.onlinetictactoe.app-main-50 /home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/res
+com.blankspace.onlinetictactoe.app-resValues-44 /home/blankspace/StudioProjects/OnlineTicTac/app/build/generated/res/resValues/debug
+com.blankspace.onlinetictactoe.app-rs-45 /home/blankspace/StudioProjects/OnlineTicTac/app/build/generated/res/rs/debug
+com.blankspace.onlinetictactoe.app-packageDebugResources-46 /home/blankspace/StudioProjects/OnlineTicTac/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.blankspace.onlinetictactoe.app-packageDebugResources-47 /home/blankspace/StudioProjects/OnlineTicTac/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.blankspace.onlinetictactoe.app-merged_res-48 /home/blankspace/StudioProjects/OnlineTicTac/app/build/intermediates/merged_res/debug
+com.blankspace.onlinetictactoe.app-debug-49 /home/blankspace/StudioProjects/OnlineTicTac/app/src/debug/res
+com.blankspace.onlinetictactoe.app-main-50 /home/blankspace/StudioProjects/OnlineTicTac/app/src/main/res

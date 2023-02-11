@@ -7,12 +7,7 @@ import android.view.View;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.SavedStateHandle;
 import androidx.lifecycle.ViewModel;
-import com.blankspace.onlinetictactoe.data.RealtimeMessagingClient;
 import com.blankspace.onlinetictactoe.di.AppModule;
-import com.blankspace.onlinetictactoe.di.AppModule_ProvideHttpClientFactory;
-import com.blankspace.onlinetictactoe.di.AppModule_ProvideRealtimeMessagingClientFactory;
-import com.blankspace.onlinetictactoe.presentation.TicTacToeViewModel;
-import com.blankspace.onlinetictactoe.presentation.TicTacToeViewModel_HiltModules_KeyModule_ProvideFactory;
 import dagger.hilt.android.ActivityRetainedLifecycle;
 import dagger.hilt.android.flags.HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule;
 import dagger.hilt.android.internal.builders.ActivityComponentBuilder;
@@ -30,7 +25,6 @@ import dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideAppl
 import dagger.internal.DaggerGenerated;
 import dagger.internal.DoubleCheck;
 import dagger.internal.Preconditions;
-import io.ktor.client.HttpClient;
 import java.util.Collections;
 import java.util.Map;
 import java.util.Set;
@@ -356,12 +350,12 @@ public final class DaggerTicTacToeApp_HiltComponents_SingletonC {
 
     @Override
     public DefaultViewModelFactories.InternalFactoryFactory getHiltInternalFactoryFactory() {
-      return DefaultViewModelFactories_InternalFactoryFactory_Factory.newInstance(ApplicationContextModule_ProvideApplicationFactory.provideApplication(singletonCImpl.applicationContextModule), getViewModelKeys(), new ViewModelCBuilder(singletonCImpl, activityRetainedCImpl));
+      return DefaultViewModelFactories_InternalFactoryFactory_Factory.newInstance(ApplicationContextModule_ProvideApplicationFactory.provideApplication(singletonCImpl.applicationContextModule), Collections.<String>emptySet(), new ViewModelCBuilder(singletonCImpl, activityRetainedCImpl));
     }
 
     @Override
     public Set<String> getViewModelKeys() {
-      return Collections.<String>singleton(TicTacToeViewModel_HiltModules_KeyModule_ProvideFactory.provide());
+      return Collections.<String>emptySet();
     }
 
     @Override
@@ -387,54 +381,17 @@ public final class DaggerTicTacToeApp_HiltComponents_SingletonC {
 
     private final ViewModelCImpl viewModelCImpl = this;
 
-    private Provider<TicTacToeViewModel> ticTacToeViewModelProvider;
-
     private ViewModelCImpl(SingletonCImpl singletonCImpl,
         ActivityRetainedCImpl activityRetainedCImpl, SavedStateHandle savedStateHandleParam) {
       this.singletonCImpl = singletonCImpl;
       this.activityRetainedCImpl = activityRetainedCImpl;
 
-      initialize(savedStateHandleParam);
 
-    }
-
-    @SuppressWarnings("unchecked")
-    private void initialize(final SavedStateHandle savedStateHandleParam) {
-      this.ticTacToeViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 0);
     }
 
     @Override
     public Map<String, Provider<ViewModel>> getHiltViewModelMap() {
-      return Collections.<String, Provider<ViewModel>>singletonMap("com.blankspace.onlinetictactoe.presentation.TicTacToeViewModel", ((Provider) ticTacToeViewModelProvider));
-    }
-
-    private static final class SwitchingProvider<T> implements Provider<T> {
-      private final SingletonCImpl singletonCImpl;
-
-      private final ActivityRetainedCImpl activityRetainedCImpl;
-
-      private final ViewModelCImpl viewModelCImpl;
-
-      private final int id;
-
-      SwitchingProvider(SingletonCImpl singletonCImpl, ActivityRetainedCImpl activityRetainedCImpl,
-          ViewModelCImpl viewModelCImpl, int id) {
-        this.singletonCImpl = singletonCImpl;
-        this.activityRetainedCImpl = activityRetainedCImpl;
-        this.viewModelCImpl = viewModelCImpl;
-        this.id = id;
-      }
-
-      @SuppressWarnings("unchecked")
-      @Override
-      public T get() {
-        switch (id) {
-          case 0: // com.blankspace.onlinetictactoe.presentation.TicTacToeViewModel 
-          return (T) new TicTacToeViewModel(singletonCImpl.provideRealtimeMessagingClientProvider.get());
-
-          default: throw new AssertionError(id);
-        }
-      }
+      return Collections.<String, Provider<ViewModel>>emptyMap();
     }
   }
 
@@ -512,20 +469,9 @@ public final class DaggerTicTacToeApp_HiltComponents_SingletonC {
 
     private final SingletonCImpl singletonCImpl = this;
 
-    private Provider<HttpClient> provideHttpClientProvider;
-
-    private Provider<RealtimeMessagingClient> provideRealtimeMessagingClientProvider;
-
     private SingletonCImpl(ApplicationContextModule applicationContextModuleParam) {
       this.applicationContextModule = applicationContextModuleParam;
-      initialize(applicationContextModuleParam);
 
-    }
-
-    @SuppressWarnings("unchecked")
-    private void initialize(final ApplicationContextModule applicationContextModuleParam) {
-      this.provideHttpClientProvider = DoubleCheck.provider(new SwitchingProvider<HttpClient>(singletonCImpl, 1));
-      this.provideRealtimeMessagingClientProvider = DoubleCheck.provider(new SwitchingProvider<RealtimeMessagingClient>(singletonCImpl, 0));
     }
 
     @Override
@@ -545,31 +491,6 @@ public final class DaggerTicTacToeApp_HiltComponents_SingletonC {
     @Override
     public ServiceComponentBuilder serviceComponentBuilder() {
       return new ServiceCBuilder(singletonCImpl);
-    }
-
-    private static final class SwitchingProvider<T> implements Provider<T> {
-      private final SingletonCImpl singletonCImpl;
-
-      private final int id;
-
-      SwitchingProvider(SingletonCImpl singletonCImpl, int id) {
-        this.singletonCImpl = singletonCImpl;
-        this.id = id;
-      }
-
-      @SuppressWarnings("unchecked")
-      @Override
-      public T get() {
-        switch (id) {
-          case 0: // com.blankspace.onlinetictactoe.data.RealtimeMessagingClient 
-          return (T) AppModule_ProvideRealtimeMessagingClientFactory.provideRealtimeMessagingClient(singletonCImpl.provideHttpClientProvider.get());
-
-          case 1: // io.ktor.client.HttpClient 
-          return (T) AppModule_ProvideHttpClientFactory.provideHttpClient();
-
-          default: throw new AssertionError(id);
-        }
-      }
     }
   }
 }

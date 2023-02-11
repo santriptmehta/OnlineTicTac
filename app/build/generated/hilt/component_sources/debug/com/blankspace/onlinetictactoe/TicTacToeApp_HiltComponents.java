@@ -1,7 +1,6 @@
 package com.blankspace.onlinetictactoe;
 
 import com.blankspace.onlinetictactoe.di.AppModule;
-import com.blankspace.onlinetictactoe.presentation.TicTacToeViewModel_HiltModules;
 import dagger.Binds;
 import dagger.Component;
 import dagger.Module;
@@ -145,8 +144,7 @@ public final class TicTacToeApp_HiltComponents {
       modules = {
           HiltWrapper_ActivityRetainedComponentManager_LifecycleModule.class,
           ActivityCBuilderModule.class,
-          ViewModelCBuilderModule.class,
-          TicTacToeViewModel_HiltModules.KeyModule.class
+          ViewModelCBuilderModule.class
       }
   )
   @ActivityRetainedScoped
@@ -181,10 +179,7 @@ public final class TicTacToeApp_HiltComponents {
   }
 
   @Subcomponent(
-      modules = {
-          HiltWrapper_HiltViewModelFactory_ViewModelModule.class,
-          TicTacToeViewModel_HiltModules.BindsModule.class
-      }
+      modules = HiltWrapper_HiltViewModelFactory_ViewModelModule.class
   )
   @ViewModelScoped
   public abstract static class ViewModelC implements ViewModelComponent,

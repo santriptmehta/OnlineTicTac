@@ -6,57 +6,57 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml
+8-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml
+9-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:5:5-67
-11-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:5:22-64
+11-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:5:5-67
+11-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:7:5-29:19
+13-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:7:5-29:19
 14        android:name="com.blankspace.onlinetictactoe.TicTacToeApp"
-14-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:8:9-37
+14-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:8:9-37
 15        android:allowBackup="true"
-15-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:9:9-35
+15-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:9:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 16-->[androidx.core:core:1.7.0] /home/blankspace/.gradle/caches/transforms-3/b85151f625e46ef03b9d240f08170c85/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
 17        android:dataExtractionRules="@xml/data_extraction_rules"
-17-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:10:9-65
+17-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:10:9-65
 18        android:debuggable="true"
 19        android:extractNativeLibs="false"
 20        android:fullBackupContent="@xml/backup_rules"
-20-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:11:9-54
+20-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:11:9-54
 21        android:icon="@mipmap/ic_launcher"
-21-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:13:9-43
+21-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:13:9-43
 22        android:label="@string/app_name"
-22-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:14:9-41
+22-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:14:9-41
 23        android:supportsRtl="true"
-23-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:15:9-35
+23-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:15:9-35
 24        android:theme="@style/Theme.OnlineTicTacToe"
-24-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:16:9-53
+24-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:16:9-53
 25        android:usesCleartextTraffic="true" >
-25-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:12:9-44
+25-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:12:9-44
 26        <activity
-26-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:18:9-28:20
+26-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:18:9-28:20
 27            android:name="com.blankspace.onlinetictactoe.MainActivity"
-27-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:19:13-41
+27-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:19:13-41
 28            android:exported="true"
-28-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:20:13-36
+28-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:20:13-36
 29            android:label="@string/app_name"
-29-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:21:13-45
+29-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:21:13-45
 30            android:theme="@style/Theme.OnlineTicTacToe" >
-30-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:22:13-57
+30-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:22:13-57
 31            <intent-filter>
-31-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:23:13-27:29
+31-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:23:13-27:29
 32                <action android:name="android.intent.action.MAIN" />
-32-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:24:17-69
-32-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:24:25-66
+32-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:24:17-69
+32-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:24:25-66
 33
 34                <category android:name="android.intent.category.LAUNCHER" />
-34-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:26:17-77
-34-->/home/blankspace/AndroidStudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:26:27-74
+34-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:26:17-77
+34-->/home/blankspace/StudioProjects/OnlineTicTac/app/src/main/AndroidManifest.xml:26:27-74
 35            </intent-filter>
 36        </activity>
 37        <activity

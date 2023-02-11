@@ -2,11 +2,12 @@ package com.blankspace.onlinetictactoe.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.blankspace.onlinetictactoe.data.GameState
+import com.blankspace.onlinetictactoe.data.MakeTurn
 import com.blankspace.onlinetictactoe.data.RealtimeMessagingClient
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
-import models.GameState
-import models.MakeTurn
+
 import java.net.ConnectException
 import javax.inject.Inject
 

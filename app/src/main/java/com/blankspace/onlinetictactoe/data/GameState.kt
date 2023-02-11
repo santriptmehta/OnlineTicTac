@@ -1,21 +1,21 @@
-package models
+package com.blankspace.onlinetictactoe.data
 
 import kotlinx.serialization.Serializable
 
 @Serializable
 data class GameState(
-    val playerAtTurn : Char? = 'X',
-    val field : Array<Array<Char?>> = emptyField(),
+    val playerAtTurn: Char? = 'X',
+    val field: Array<Array<Char?>> = emptyField(),
     val winningPlayer: Char? = null,
-    val isBoardFull : Boolean = false,
-    val connectedPlayer: List<Char> = emptyList()
-){
-    companion object{
-        fun emptyField(): Array<Array<Char?>>{
+    val isBoardFull: Boolean = false,
+    val connectedPlayers: List<Char> = emptyList()
+) {
+    companion object {
+        fun emptyField(): Array<Array<Char?>> {
             return arrayOf(
                 arrayOf(null, null, null),
                 arrayOf(null, null, null),
-                arrayOf(null, null, null)
+                arrayOf(null, null, null),
             )
         }
     }
@@ -30,7 +30,7 @@ data class GameState(
         if (!field.contentDeepEquals(other.field)) return false
         if (winningPlayer != other.winningPlayer) return false
         if (isBoardFull != other.isBoardFull) return false
-        if (connectedPlayer != other.connectedPlayer) return false
+        if (connectedPlayers != other.connectedPlayers) return false
 
         return true
     }
@@ -40,7 +40,7 @@ data class GameState(
         result = 31 * result + field.contentDeepHashCode()
         result = 31 * result + (winningPlayer?.hashCode() ?: 0)
         result = 31 * result + isBoardFull.hashCode()
-        result = 31 * result + connectedPlayer.hashCode()
+        result = 31 * result + connectedPlayers.hashCode()
         return result
     }
 }
